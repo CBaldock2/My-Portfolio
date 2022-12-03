@@ -39,7 +39,7 @@ body {
 .header nav ul {
     list-style-type: none;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header nav ul li {
@@ -64,26 +64,37 @@ a {
 .button:hover {
     color: #E98074;
     background-color: var(--deep-red);
-    cursor:pointer
+    cursor: pointer
 }
 
 .hero {
     height: 400px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     background-image: url("../images/pngegg.png");
     background-size: cover;
     background-position: center;
 }
 
-.about h2,.work h2, .contact h2 {
-    margin: 15px 15px 0px 15px;
-    color: #9f85bd;
-    font-size: 32px;
-    font-family: Georgia;;
+.about,
+.work,
+.contact {
+    position: relative;
 }
 
-.about p, .work p, .contact p  {
+.about h2,
+.work h2,
+.contact h2 {
+    margin: 15px 20px 0px 20px;
+    color: #9f85bd;
+    font-size: 32px;
+    font-family: Georgia;
+    text-shadow: 2px 2px rgb(93, 36, 139);
+}
+
+.about p,
+.work p,
+.contact p {
     margin: 10px 75px;
     padding: 5px;
     background-color: rgb(215, 207, 224);
@@ -97,21 +108,31 @@ a {
 }
 
 .work a:hover {
-    cursor: pointer;
+}
+
+.cat-container {
+    margin-left: 25px;
+}
+
+.horiseon-container {
+    margin-left: 25px;
 }
 
 #about-p {
     text-align: center;
+    line-height: 20px;
     height: 160px;
+    margin-bottom: 75px;
 }
 
 #work-p {
     height: 500px;
-
+    margin-bottom: 75px;
 }
 
 #contact-p {
     text-align: center;
+    margin-bottom: 75px;
 }
 
 .about img {
@@ -125,31 +146,50 @@ a {
 }
 
 #cat {
-    margin: 15px 0 15px 245px;
+    margin: 25px 0 15px 85px;
     max-height: 350px;
+    border-radius: 5px;
     float: left;
+    display: flex;
+    position: relative;
 }
 
-#catcaption{
+#cat:hover {
+    box-shadow: 8px 8px 15px rgb(170, 141, 216);
+}
+
+.cat-card {
     position: absolute;
-    top: 1090px;
-    left: 300px;
-    padding: 5px;
+    padding: 8px;
     color: aliceblue;
     background-color: #51bdd8;
+    display: flex;
+    text-align: center;
 }
+#catcaption {
+    left: 200px;
+    top: 350px;
+}
+
 
 #horiseon {
-    margin: 25px 0 50px 160px;
+    margin: 25px 0 50px 60px;
     max-height: 70px;
+    border-radius: 5px;
     float: left;
+    display: flex;
+    position: relative;
 }
 
-#horiseon-caption {
+#horiseon:hover {
+    box-shadow: 4px 4px 5px rgb(170, 141, 216);
+}
+
+.horiseon-card {
     position: absolute;
-    top: 825px;
-    left: 800px;
-    padding: 3px;
+    top: 107px;
+    left: 575px;
+    padding: 2px;
     color: rgb(170, 146, 228);
     background-color: #582b7c;
 }
@@ -160,30 +200,86 @@ a {
     font-family: monospace;
     text-align: center;
     font-size: 15px;
-    margin: 50px 0px 50px 0px;
+    margin: 75px 0px 0px 0px;
+    padding-bottom: 25px;
 }
 
 @media screen and (max-width: 992px) {
     body {
         background-color: rgb(182, 91, 133);
     }
-    .about h2,.work h2, .contact h2 {
+
+    .about h2,
+    .work h2,
+    .contact h2 {
         color: var(--deep-red);
+        text-shadow: 1px 1px rgb(17, 4, 54);
     }
-    .about p, .work p, .contact p {
+
+    .about p,
+    .work p,
+    .contact p {
         background-color: rgb(229, 186, 206);
         border-left: thick solid var(--deep-red);
     }
+
     .about img {
-    border-color: var(--deep-red) var(--bright-red);
-    border-bottom-color: var(--bright-red);
+        border-color: var(--deep-red) var(--bright-red);
+        border-bottom-color: var(--bright-red);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .header, .header nav, .button {
+
+    .header,
+    .header nav,
+    .button {
         background-color: #362761;
         color: #E98074;
+    }
+
+    .about h2,
+    .work h2 {
+        color: #362761;
+        transform: rotate(270deg);
+        text-shadow: 1px 1px #E98074;
+    }
+
+    .about h2 {
+        position: absolute;
+        left: -50px;
+        top: 46px;
+    }
+
+    .work h2 {
+        position: absolute;
+        left: -15px;
+        top: 15px;
+    }
+
+    .contact h2 {
+        color: #362761;
+        text-shadow: 1px 1px #E98074;
+    }
+
+    .about img {
+        margin: 5px 0 1px 85px;
+    }
+
+    #catcaption {
+        left: 200px;
+        top: 315px;
+    }
+
+    .horiseon-card {
+        position: absolute;
+        top: 450px;
+        left: 100px;
+    }
+
+    #horiseon-caption {
+        left: 120px;
+        top: 465px;
     }
 
 
