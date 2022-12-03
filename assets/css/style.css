@@ -185,7 +185,8 @@ a {
     box-shadow: 4px 4px 5px rgb(170, 141, 216);
 }
 
-.horiseon-card {
+
+#horiseon-caption {
     position: absolute;
     top: 107px;
     left: 575px;
@@ -193,6 +194,7 @@ a {
     color: rgb(170, 146, 228);
     background-color: #582b7c;
 }
+
 
 
 .footer {
