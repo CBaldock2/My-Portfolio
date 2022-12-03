@@ -11,7 +11,6 @@
 }
 
 body {
-    margin: 0;
     background-color: #181122;
 }
 
@@ -33,6 +32,8 @@ body {
     margin-right: 20px;
     float: right;
     word-spacing: -1px;
+    border-radius: 4px;
+    background-color: var(--bright-red);
 }
 
 .header nav ul {
@@ -95,12 +96,21 @@ a {
     padding: 10px 30px 10px 30px;
 }
 
+.work a:hover {
+    cursor: pointer;
+}
+
 #about-p {
+    text-align: center;
     height: 160px;
 }
 
 #work-p {
     height: 200px;
+}
+
+#contact-p {
+    text-align: center;
 }
 
 .about img {
@@ -119,10 +129,28 @@ a {
     float: left;
 }
 
+#catcaption{
+    position: absolute;
+    top: 918px;
+    left: 95px;
+    padding: 5px;
+    color: aliceblue;
+    background-color: #51bdd8;
+}
+
 #horiseon {
-    margin: 25px 0 50px 50px;
-    max-height: 50px;
+    margin: 25px 0 50px 20px;
+    max-height: 70px;
     float: left;
+}
+
+#horiseon-caption {
+    position: absolute;
+    top: 820px;
+    left: 356px;
+    padding: 3px;
+    color: rgb(170, 146, 228);
+    background-color: #582b7c;
 }
 
 
@@ -130,10 +158,11 @@ a {
     color: #a888cc;
     font-family: monospace;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+    margin: 50px 0px 50px 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     body {
         background-color: rgb(182, 91, 133);
     }
@@ -148,4 +177,13 @@ a {
     border-color: var(--deep-red) var(--bright-red);
     border-bottom-color: var(--bright-red);
     }
+}
+
+@media screen and (max-width: 768px) {
+    .header, .header nav, .button {
+        background-color: #362761;
+        color: #E98074;
+    }
+
+
 }
