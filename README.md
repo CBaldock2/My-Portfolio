@@ -13,6 +13,8 @@ To use my portfolio you click on a button in the navbar it will scroll down the 
 N/A
 
 ## Screenshot
+![upper screenshot of my page](./assets/images/Upper%20half%20of%20port.png)
+![lower screenshot of my page](./assets/images/Lower%20half%20of%20port.png)
 
 ## Link
 <a href="https://cbaldock2.github.io/My-Portfolio/ ">My Portfolio</a>
