@@ -119,7 +119,6 @@ a {
 }
 
 #about-p {
-    text-align: center;
     line-height: 20px;
     height: 160px;
     margin-bottom: 75px;
@@ -136,7 +135,7 @@ a {
 }
 
 .about img {
-    margin: 15px 0 10px 85px;
+    margin: 15px 20px 10px 85px;
     max-height: 150px;
     float: left;
     border: 3px solid;
